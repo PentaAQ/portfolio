@@ -13,9 +13,55 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .a-header {
-  @apply text-white md:hover:text-orange-500 transition-all duration-300 max-md:hover:bg-amber-600 max-md:py-2 w-full block text-center;
+  @apply text-white cursor-pointer md:hover:text-orange transition-all duration-300 max-md:hover:bg-amber-600 max-md:py-2 w-full block text-center;
 }
 
 @theme {
   --color-orange: #ff8800;
+  --shadow-orangecenter: 0 0 20px #ff8800;
+
+  --animate-text:text 2s ease-in-out 0.2s;
+  @keyframes text {
+    0%{
+      width:0;
+    }
+    100%{
+      width:100%;
+    }
+  }
+
+  --animate-heroinfo: heroinfo 1500ms ease-in-out;
+  @keyframes heroinfo {
+    0% {
+      opacity: 0;
+      transform: translate(-200px, 0);
+    }
+    100% {
+      opacity: 100;
+      transform: translate(0, 0);
+    } 
+  }
+  --animate-heroimg: heroimg 1500ms ease-in-out;
+  @keyframes heroimg {
+    0% {
+      opacity: 0;
+      transform: translate(200px, 0);
+    }
+    100% {
+      opacity: 100;
+      transform: translate(0, 0);
+    } 
+  }
+  --animate-header: header 1500ms ease-in-out;
+  @keyframes header {
+    0% {
+      opacity: 0;
+      transform: translate(0, -100px);
+    }
+    100% {
+      opacity: 100;
+      transform: translate(0, 0);
+    }
+  }
+
 }
