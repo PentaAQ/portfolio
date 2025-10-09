@@ -9,24 +9,35 @@
 @import "@fontsource/poppins/800.css";
 @import "@fontsource/poppins/900.css";
 
-body {
+/* Sirve para todos, pro hay problemas con el header ya que cuando entras a la pagina el hero
+se mueve tambien esos 85px */
+/* :root {
+  scroll-padding-top: 85px;
+} */
+html {
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 .a-header {
   @apply text-white cursor-pointer md:hover:text-orange transition-all duration-300 max-md:hover:bg-amber-600 max-md:py-2 w-full block text-center;
+}
+section[id]:not(#home) {
+  scroll-margin-top: 80px;
+  margin-top: 40px;
 }
 
 @theme {
   --color-orange: #ff8800;
   --shadow-orangecenter: 0 0 20px #ff8800;
+  --shadow-orangecardabout: 0 -3px 0 0 #ff8800;
 
-  --animate-text:text 2s ease-in-out 0.2s;
+  --animate-text: text 2s ease-in-out 0.2s;
   @keyframes text {
-    0%{
-      width:0;
+    0% {
+      width: 0;
     }
-    100%{
-      width:100%;
+    100% {
+      width: 100%;
     }
   }
 
@@ -39,7 +50,7 @@ body {
     100% {
       opacity: 100;
       transform: translate(0, 0);
-    } 
+    }
   }
   --animate-heroimg: heroimg 1500ms ease-in-out;
   @keyframes heroimg {
@@ -50,7 +61,7 @@ body {
     100% {
       opacity: 100;
       transform: translate(0, 0);
-    } 
+    }
   }
   --animate-header: header 1500ms ease-in-out;
   @keyframes header {
@@ -63,5 +74,4 @@ body {
       transform: translate(0, 0);
     }
   }
-
 }

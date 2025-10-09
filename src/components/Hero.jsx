@@ -7,8 +7,15 @@ export const Hero = () => {
     { name: "Supabase" },
     { name: "MySQL" },
   ];
+  const redes = [
+    { icon: "lucide:github", link: "https://github.com/PentaAQ" },
+    {
+      icon: "lucide:linkedin",
+      link: "https://www.linkedin.com/in/eddy-alexiz-yucra-amado-/",
+    },
+  ];
   return (
-    <section className="h-[100vh] grid md:grid-cols-2 items-center gap-4 text-white mx-auto w-full max-w-7xl px-2 relative">
+    <section className="h-[100vh] grid md:grid-cols-2 items-center gap-4 text-white mx-auto w-full max-w-7xl px-2 relative pt-20" id="home">
       <div className="flex gap-5 flex-col animate-heroinfo">
         <div className="bg-gradient-to-r from-orange/30 to-orange/1 px-3 py-1 rounded-2xl border border-neutral-700 font-medium w-fit">
           <p className="animate-text overflow-hidden text-nowrap tracking-wider ">
@@ -55,8 +62,15 @@ export const Hero = () => {
             <Icon icon="ic:outline-email" width="20" height="20" />
           </a>
         </div>
+        <div className="flex items-center gap-5 ">
+          {redes.map((item, index) => (
+            <a href={item.link} target="_blank" className="bg-white/10 p-2 ring-1 ring-white/15 rounded-md" key={index}>
+              <Icon icon={item.icon} width="30" height="30" />
+            </a>
+          ))}
+        </div>
       </div>
-      <div className="animate-bounce md:animate-heroimg h-90 max-md:absolute max-md:max-h-20 top-30 right-10 transition-all duration-500">
+      <div className="animate-bounce md:animate-heroimg h-90 max-md:absolute max-md:max-h-20 top-35 right-5 transition-all duration-500">
         <img
           src={FotoPerfil}
           alt="FotoPerfil"
