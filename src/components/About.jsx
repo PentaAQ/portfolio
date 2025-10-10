@@ -2,16 +2,23 @@ import { Icon } from "@iconify/react";
 
 export const About = () => {
   const abouts = [
-    { title: "¿Quién Soy?", icon: "gravity-ui:person", description: "lorem" },
     {
-      title: "Mi Objetivo",
-      icon: "mingcute:rocket-line",
-      description: "lorem",
+      title: "Who am I?",
+      icon: "gravity-ui:person",
+      description:
+        "I am a fullstack web developer with a focus on creating efficient, scalable, and user-centric applications. I love learning new technologies and applying good development practices to deliver solid results.",
     },
     {
-      title: "Mi Perfil",
+      title: "My Goal",
+      icon: "mingcute:rocket-line",
+      description:
+        "It means continuing to grow as a professional in the technological area, contributing to projects that drive innovation and generate a real impact. I seek to be part of teams that value code quality and continuous improvement.",
+    },
+    {
+      title: "My Profile",
       icon: "ic:baseline-fingerprint",
-      description: "lorem",
+      description:
+        "I have experience in front-end and back-end development, working with technologies such as JavaScript, React, Django, supabase and SQL databases. I stand out for my analytical thinking and problem-solving abilities.",
     },
   ];
   const stack = [
@@ -79,12 +86,7 @@ export const About = () => {
               />
               <h2 className="text-2xl font-bold text-orange">{item.title}</h2>
             </div>
-            <p className="text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-              laboriosam facere nobis eligendi omnis repellat repellendus
-              aspernatur placeat animi! Fuga et ipsum harum perferendis
-              assumenda a quibusdam, voluptatibus corrupti ducimus?
-            </p>
+            <p className="text-sm">{item.description}</p>
           </div>
         ))}
       </div>
@@ -92,7 +94,10 @@ export const About = () => {
         <h2 className="text-3xl font-bold text-center text-orange">Mi Stack</h2>
         <div className="flex gap-2 justify-around max-lg:flex-wrap">
           {stack.map((item, index) => (
-            <div key={index} className="flex flex-col items-center gap-2 hover:-translate-y-5  transition-all duration-300 bg-amber-900/10 p-2 w-25 h-fit overflow-hidden rounded-lg cursor-pointer">
+            <div
+              key={index}
+              className="flex flex-col items-center gap-2 hover:-translate-y-5  transition-all duration-300 bg-amber-900/10 p-2 w-25 h-fit overflow-hidden rounded-lg cursor-pointer"
+            >
               <Icon icon={item.icon} width="40" height="40" />
               <h3 className="text-sm">{item.name}</h3>
             </div>

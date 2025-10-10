@@ -15,7 +15,10 @@ export const Hero = () => {
     },
   ];
   return (
-    <section className="h-[100vh] grid md:grid-cols-2 items-center gap-4 text-white mx-auto w-full max-w-7xl px-2 relative pt-20" id="home">
+    <section
+      className="h-[100vh] grid md:grid-cols-2 items-center gap-4 text-white mx-auto w-full max-w-7xl px-2 relative pt-20"
+      id="home"
+    >
       <div className="flex gap-5 flex-col animate-heroinfo">
         <div className="bg-gradient-to-r from-orange/30 to-orange/1 px-3 py-1 rounded-2xl border border-neutral-700 font-medium w-fit">
           <p className="animate-text overflow-hidden text-nowrap tracking-wider ">
@@ -26,10 +29,8 @@ export const Hero = () => {
           Hi, I'm <span className="text-orange">Alexiz Y. Amado</span>
         </h1>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque labore
-          neque nihil. Officiis consequatur laudantium rem, illo ullam possimus
-          est quis adipisci iusto? Impedit a minima quis. Debitis, voluptas
-          neque!
+          I am a full stack developer passionate about creating modern,
+          functional and purposeful web experiences. 🚀{" "}
         </p>
         <div className="flex gap-2">
           {lenguaje.map((item, index) => (
@@ -64,7 +65,12 @@ export const Hero = () => {
         </div>
         <div className="flex items-center gap-5 ">
           {redes.map((item, index) => (
-            <a href={item.link} target="_blank" className="bg-white/10 p-2 ring-1 ring-white/15 rounded-md" key={index}>
+            <a
+              href={item.link}
+              target="_blank"
+              className="bg-white/10 p-2 ring-1 ring-white/15 rounded-md"
+              key={index}
+            >
               <Icon icon={item.icon} width="30" height="30" />
             </a>
           ))}
