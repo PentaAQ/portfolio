@@ -58,7 +58,7 @@ export const About = () => {
   ];
   return (
     <section
-      className="w-full max-w-7xl mx-auto text-white px-2 flex gap-10 flex-col "
+      className="w-full max-w-7xl mx-auto text-white px-2 flex gap-10 md:gap-20 flex-col md:h-screen"
       id="about"
     >
       <h1 className="text-5xl font-bold border-b-2 border-orange w-fit">
