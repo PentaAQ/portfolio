@@ -18,7 +18,7 @@ export const Projects = () => {
         "Academic team project where I developed a forum system with user management and administrative panels. It allowed me to reinforce technical and collaborative work skills.",
       lenguajes: "Python - Django - SQL",
       img: UtpForo,
-      to:'https://github.com/PentaAQ/UTPForoPadre'
+      to:'https://utpforopadre.onrender.com/'
     },
     {
       title: "Personal Website",
