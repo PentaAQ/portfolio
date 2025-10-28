@@ -1,6 +1,7 @@
 import RampalContadores from "../assets/rampal.png";
 import PersonPage from '../assets/personpage.png'
 import UtpForo from '../assets/utpforo.png'
+import EcomWS from '../assets/ecomws.png'
 export const Projects = () => {
   const proyects = [
     {
@@ -26,6 +27,14 @@ export const Projects = () => {
       lenguajes: "React - Tailwind",
       img: PersonPage,
       to:''
+    },
+    {
+      title: "EcomWS",
+      description:
+        "E-commerce platform for entrepreneurs: Informative public homepage, login with automatic redirection, and admin with CRUD for products, listings and details, price management, photos, and stock.",
+      lenguajes: "React - Tailwind - Supabase",
+      img: EcomWS,
+      to:'https://ecomws.vercel.app/'
     },
   ];
   return (
