@@ -7,7 +7,7 @@ export const Projects = () => {
     {
       title: "Rampal Contadores",
       description:
-        "I designed and developed a corporate website that conveys trust and professionalism. Its objective was to improve the company's digital presence and facilitate communication with its customers.",
+        "Diseñé y desarrollé un sitio web corporativo que transmite confianza y profesionalismo. Su objetivo fue mejorar la presencia digital de la empresa y facilitar la comunicación con sus clientes.",
       lenguajes: "Tailwind - JavaScript - React - Astro",
       img: RampalContadores,
       to:'https://www.rampalcontadores.com/'
@@ -15,15 +15,15 @@ export const Projects = () => {
     {
       title: "UTP+Foro",
       description:
-        "Academic team project where I developed a forum system with user management and administrative panels. It allowed me to reinforce technical and collaborative work skills.",
+        "Proyecto académico en equipo donde desarrollé un sistema de foro con gestión de usuarios y paneles administrativos. Me permitió reforzar habilidades técnicas y de trabajo colaborativo.",
       lenguajes: "Python - Django - SQL",
       img: UtpForo,
       to:'https://utpforopadre.onrender.com/'
     },
     {
-      title: "Personal Website",
+      title: "Sitio Web Personal",
       description:
-        "I created my web portfolio to showcase my projects and professional career, with a design focused on visual clarity, organization, and user experience.",
+        "Creé mi portafolio web para mostrar mis proyectos y trayectoria profesional, con un diseño enfocado en la claridad visual, organización y experiencia del usuario.",
       lenguajes: "React - Tailwind",
       img: PersonPage,
       to:''
@@ -31,7 +31,7 @@ export const Projects = () => {
     {
       title: "EcomWS",
       description:
-        "E-commerce platform for entrepreneurs: Informative public homepage, login with automatic redirection, and admin with CRUD for products, listings and details, price management, photos, and stock.",
+        "Plataforma de e-commerce para emprendedores: Página informativa pública, login con redirección automática, y administrador con CRUD para productos, listados y detalles, gestión de precios, fotos y stock.",
       lenguajes: "React - Tailwind - Supabase",
       img: EcomWS,
       to:'https://ecomws.vercel.app/'
@@ -43,7 +43,7 @@ export const Projects = () => {
       className="w-full max-w-7xl mx-auto text-white px-2 flex flex-col gap-10"
     >
       <h1 className="text-5xl font-bold border-b-2 border-orange w-fit">
-      Projects
+      Proyectos
       </h1>
       <div className="flex gap-10 flex-wrap max-w-5xl mx-auto w-full justify-around">
         {proyects.map((item, index) => (

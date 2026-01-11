@@ -9,17 +9,12 @@
 @import "@fontsource/poppins/800.css";
 @import "@fontsource/poppins/900.css";
 
-/* Sirve para todos, pro hay problemas con el header ya que cuando entras a la pagina el hero
-se mueve tambien esos 85px */
-/* :root {
-  scroll-padding-top: 85px;
-} */
 html {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
 .a-header {
-  @apply text-white cursor-pointer md:hover:text-orange transition-all duration-300 max-md:hover:bg-amber-600 max-md:py-2 w-full block text-center;
+  @apply text-white cursor-pointer md:hover:text-orange transition-all duration-300 max-md:hover:bg-orange-600 max-md:py-2 w-full block text-center;
 }
 section[id]:not(#home) {
   scroll-margin-top: 80px;
@@ -27,9 +22,24 @@ section[id]:not(#home) {
 }
 
 @theme {
-  --color-orange: #ff8800;
-  --shadow-orangecenter: 0 0 20px #ff8800;
-  --shadow-orangecardabout: 0 -3px 0 0 #ff8800;
+  --color-orange-50: #fff7ed;
+  --color-orange-100: #ffedd5;
+  --color-orange-200: #fed7aa;
+  --color-orange-300: #fdba74;
+  --color-orange-400: #fb923c;
+  --color-orange-500: #f97316;
+  --color-orange-600: #ea580c;
+  --color-orange-700: #c2410c;
+  --color-orange-800: #9a3412;
+  --color-orange-900: #7c2d12;
+  
+  --color-orange: #f97316;
+  --color-orange-light: #fb923c;
+  --color-orange-dark: #ea580c;
+  
+  --shadow-orangecenter: 0 0 25px #f97316;
+  --shadow-orangecardabout: 0 -3px 0 0 #fb923c;
+  --shadow-orange-glow: 0 0 15px rgba(249, 115, 22, 0.3);
 
   --animate-text: text 2s ease-in-out 0.2s;
   @keyframes text {

@@ -16,21 +16,21 @@ export const Hero = () => {
   ];
   return (
     <section
-      className="h-[100vh] grid md:grid-cols-2 items-center gap-4 text-white mx-auto w-full max-w-7xl px-2 relative pt-20"
+      className="h-screen grid md:grid-cols-2 items-center gap-4 text-white mx-auto w-full max-w-7xl px-2 relative pt-20"
       id="home"
     >
       <div className="flex gap-5 flex-col animate-heroinfo">
-        <div className="bg-gradient-to-r from-orange/30 to-orange/1 px-3 py-1 rounded-2xl border border-neutral-700 font-medium w-fit">
+        <div className="bg-linear-to-r from-orange/30 to-orange/1 px-3 py-1 rounded-2xl border border-neutral-700 font-medium w-fit">
           <p className="animate-text overflow-hidden text-nowrap tracking-wider ">
-            Full-Stack Developer
+            Desarrollador Full-Stack
           </p>
         </div>
         <h1 className="text-6xl/20 font-bold">
-          Hi, I'm <span className="text-orange">Alexiz Y. Amado</span>
+          Hola, soy <span className="text-orange">Alexiz Y. Amado</span>
         </h1>
         <p>
-          I am a full stack developer passionate about creating modern,
-          functional and purposeful web experiences. 🚀{" "}
+          Soy un desarrollador full stack apasionado por crear experiencias web
+          modernas, funcionales y con propósito. 🚀{" "}
         </p>
         <div className="flex gap-2">
           {lenguaje.map((item, index) => (
@@ -47,7 +47,7 @@ export const Hero = () => {
             href="#projects"
             className="w-40 bg-orange/50 hover:bg-orange focus:bg-orange rounded-lg py-2 font-medium hover:shadow-orangecenter focus:shadow-orangecenter transition-all duration-200 flex gap-3 items-center justify-center"
           >
-            Projects
+            Proyectos
             <Icon
               icon="fluent-emoji-high-contrast:up-arrow"
               width="20"
@@ -59,7 +59,7 @@ export const Hero = () => {
             href="#contact"
             className="w-40 bg-orange/50 hover:bg-orange focus:bg-orange rounded-lg py-2 font-medium hover:shadow-orangecenter focus:shadow-orangecenter transition-all duration-200 flex gap-3 items-center justify-center"
           >
-            Contact
+            Contacto
             <Icon icon="ic:outline-email" width="20" height="20" />
           </a>
         </div>

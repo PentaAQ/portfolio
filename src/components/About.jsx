@@ -3,22 +3,22 @@ import { Icon } from "@iconify/react";
 export const About = () => {
   const abouts = [
     {
-      title: "Who am I?",
+      title: "¿Quién soy?",
       icon: "gravity-ui:person",
       description:
-        "I am a fullstack web developer with a focus on creating efficient, scalable, and user-centric applications. I love learning new technologies and applying good development practices to deliver solid results.",
+        "Soy un desarrollador web fullstack enfocado en crear aplicaciones eficientes, escalables y centradas en el usuario. Me encanta aprender nuevas tecnologías y aplicar buenas prácticas de desarrollo para entregar resultados sólidos.",
     },
     {
-      title: "My Goal",
+      title: "Mi Objetivo",
       icon: "mingcute:rocket-line",
       description:
-        "It means continuing to grow as a professional in the technological area, contributing to projects that drive innovation and generate a real impact. I seek to be part of teams that value code quality and continuous improvement.",
+        "Significa seguir creciendo como profesional en el área tecnológica, contribuyendo a proyectos que impulsen la innovación y generen un impacto real. Busco ser parte de equipos que valoren la calidad del código y la mejora continua.",
     },
     {
-      title: "My Profile",
+      title: "Mi Perfil",
       icon: "ic:baseline-fingerprint",
       description:
-        "I have experience in front-end and back-end development, working with technologies such as JavaScript, React, Django, supabase and SQL databases. I stand out for my analytical thinking and problem-solving abilities.",
+        "Tengo experiencia en desarrollo front-end y back-end, trabajando con tecnologías como JavaScript, React, Django, Supabase y bases de datos SQL. Destaco por mi pensamiento analítico y habilidades para resolver problemas.",
     },
   ];
   const stack = [
@@ -69,7 +69,7 @@ export const About = () => {
       id="about"
     >
       <h1 className="text-5xl font-bold border-b-2 border-orange w-fit">
-        About Me
+        Sobre Mí
       </h1>
       <div className=" flex gap-10 flex-wrap justify-center">
         {abouts.map((item, index) => (
@@ -96,7 +96,7 @@ export const About = () => {
           {stack.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center gap-2 hover:-translate-y-5  transition-all duration-300 bg-amber-900/10 p-2 w-25 h-fit overflow-hidden rounded-lg cursor-pointer"
+              className="flex flex-col items-center gap-2 hover:-translate-y-5  transition-all duration-300 bg-orange-900/10 p-2 w-25 h-fit overflow-hidden rounded-lg cursor-pointer"
             >
               <Icon icon={item.icon} width="40" height="40" />
               <h3 className="text-sm">{item.name}</h3>

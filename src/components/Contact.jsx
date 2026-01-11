@@ -12,10 +12,10 @@ export const Contact = () => {
             <Icon icon="line-md:check-all" width="50" height="50" />
           </div>
           <h2 className="text-2xl font-bold text-white mb-2">
-            Message Sent!
+            ¡Mensaje Enviado!
           </h2>
           <p className="text-neutral-300">
-            Thanks for contacting me. I will reply to you as soon as possible.
+            Gracias por contactarme. Te responderé lo antes posible.
           </p>
         </div>
       </section>
@@ -29,10 +29,10 @@ export const Contact = () => {
     >
       <div className="max-w-md w-full flex flex-col gap-5">
         <h2 className="text-5xl font-bold border-b-2 border-orange w-fit text-white mx-auto">
-          Let's talk
+          Hablemos
         </h2>
         <p className="text-neutral-400 mb-8 text-center">
-          Do you have a project in mind? I would love to hear you
+          ¿Tienes un proyecto en mente? Me encantaría escucharte
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-5">
@@ -41,15 +41,15 @@ export const Contact = () => {
               htmlFor="name"
               className="block text-sm font-medium text-neutral-300 mb-2"
             >
-              Full Name
+              Nombre Completo
             </label>
             <input
               id="name"
               type="text"
               name="name"
               required
-              className="w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-lg text-white placeholder-neutral-500 focus:outline-none focus:border-[#ff8800] focus:ring-1 focus:ring-[#ff8800] transition-colors"
-              placeholder="Your Name"
+              className="w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-lg text-white placeholder-neutral-500 focus:outline-none focus:border-orange-600 focus:ring-1 focus:ring-orange-600 transition-colors"
+              placeholder="Tu Nombre"
               disabled={state.submitting}
             />
             <ValidationError prefix="Name" field="name" errors={state.errors} />
@@ -67,7 +67,7 @@ export const Contact = () => {
               type="email"
               name="email"
               required
-              className="w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-lg text-white placeholder-neutral-500 focus:outline-none focus:border-[#ff8800] focus:ring-1 focus:ring-[#ff8800] transition-colors"
+              className="w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-lg text-white placeholder-neutral-500 focus:outline-none focus:border-orange-600 focus:ring-1 focus:ring-orange-600 transition-colors"
               placeholder="you@email.com"
               disabled={state.submitting}
             />
@@ -83,7 +83,7 @@ export const Contact = () => {
               htmlFor="message"
               className="block text-sm font-medium text-neutral-300 mb-2"
             >
-              Messaje
+              Mensaje
             </label>
             <textarea
               id="message"
@@ -91,7 +91,7 @@ export const Contact = () => {
               required
               rows={5}
               className="w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-lg text-white placeholder-neutral-500 focus:outline-none focus:border-[#ff8800] focus:ring-1 focus:ring-[#ff8800] transition-colors resize-none"
-              placeholder="Write your message here..."
+              placeholder="Escribe tu mensaje aquí..."
               disabled={state.submitting}
             />
             <ValidationError
@@ -104,16 +104,16 @@ export const Contact = () => {
           <button
             type="submit"
             disabled={state.submitting}
-            className="w-full bg-[#ff8800] hover:bg-[#e67a00] text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed group"
+            className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed group"
           >
             {state.submitting ? (
               <>
                 <Icon icon="codex:loader" width="24" height="24" />
-                <span>Sending...</span>
+                <span>Enviando...</span>
               </>
             ) : (
               <>
-                <span>Send Message</span>
+                <span>Enviar Mensaje</span>
                 <Icon icon="tabler:send" width="24" height="24" />
               </>
             )}

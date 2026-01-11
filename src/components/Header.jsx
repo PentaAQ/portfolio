@@ -8,7 +8,7 @@ export const Header = () => {
           <img
             src="/logo.svg"
             alt="Logo de Alexiz Yucra"
-            className="h-13 fill-amber-500"
+            className="h-13 fill-orange-500"
           />
           {/* <h1 className="text-2xl font-bold text-orange">Alexiz.dev</h1> */}
         </div>
@@ -27,22 +27,22 @@ export const Header = () => {
           <ul className="capitalize flex md:gap-6 text-lg font-medium max-md:flex-col ">
             <li className="">
               <a className="a-header" href="#home">
-                home
+                inicio
               </a>
             </li>
             <li>
               <a className="a-header" href="#about">
-                about
+                sobre mí
               </a>
             </li>
             <li className="">
               <a className="a-header" href="#projects">
-                projects
+                proyectos
               </a>
             </li>
             <li>
               <a className="a-header" href="#contact">
-                contact
+                contacto
               </a>
             </li>
           </ul>
